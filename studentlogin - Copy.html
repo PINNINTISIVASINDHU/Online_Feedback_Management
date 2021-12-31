@@ -1,0 +1,55 @@
+
+<html>
+<head>
+<title>STUDENT LOGIN FORM</title>
+<script language="javascript" >
+function fun3()
+{
+	var sid=document.studentlogin.sid.value;
+	var pwd=document.studentlogin.pwd.value;
+	if(sid=="")
+	{
+		alert("First Roll No must be filled");
+		return false;
+	}
+	else if(sid.length != 10)
+	{	
+			alert("Roll No must be of 10 digit");
+			document.studentlogin.ROLLNO.value="";
+			document.studentlogin.ROLLNO.focus();
+			return false;
+	}
+	else if(pass=="")
+	{
+		alert("First Password must be filled");
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+<body style="background-color:cyan" >
+<form action="studentlogin.jsp" onsubmit="return fun3()" method="post">
+<center>
+<img src="logo.png" width="780" height="151" alt="logo"><br><br>
+<marquee bgcolor="red" behavior=alternate direction="right" width="100%">STUDENT LOGIN FORM</marquee>
+<br><br><br>
+<table border="0" cellspacing=0 cellpadding=5 >
+<caption align=bottom>
+<input type="submit" value="LOGIN">
+</caption>
+<tr>
+	<td>SID:</td>
+	<th><input name="sid" value="" type=text size="20"></th>
+</tr>
+<tr>
+	<td>PASSWORD :</td>
+	<th><input name="pwd" value="" type=password size="20"><br></th>
+</tr>
+</table>
+<center><a href="home.html">BACK TO HOME</center>
+<br><br><br>
+</center>
+</form>
+</body>
+</html>

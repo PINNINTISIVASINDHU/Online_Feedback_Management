@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>TEACHER LOGIN FORM</title>
+<script language="javascript" >
+function fun3()
+{
+	var username=document.teacherlogin.username.value;
+	var passwd=document.teacherlogin.passwd.value;
+	if(username =="" || passwd =="")
+	{
+			alert("Enter the Details First");
+			document.teacherlogin.username.focus();
+			return false;
+	}
+}
+</script>
+</head>
+<body>
+<body bgcolor="cyan" >
+<form name="teacherlogin" action="teacherlogin.jsp" onsubmit="return fun3()" method="POST">
+<center>
+<img src="logo.png" width="780" height="151" alt="logo">
+<marquee bgcolor="yellow" behavior=alternate direction="right" width="100%">TEACHER LOGIN FORM</marquee>
+
+<br><br><br>
+<table border="0" cellspacing=0 cellpadding=5 >
+<caption align=bottom>
+<input type="SUBMIT" value=SUBMIT>
+</caption>
+<tr>
+	<th>USER NAME :</th>
+	<td><input name="username" value="" type=text size="20"></td>
+</tr>
+<tr>
+	<th>PASSWORD :</th>
+	<td><input name="passwd" value="" type=password size="20"><br></td>
+</tr>
+</table>
+<center><a href="home.html">BACK TO HOME</center>
+<br><br><br>
+
+</center>
+</form>
+</body>
+</html>

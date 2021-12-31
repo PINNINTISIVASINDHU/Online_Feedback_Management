@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Add New Teacher</title>
+<script language="javascript" >
+function fun()
+{
+	var username=document.removeteacher.username.value;
+	var uname=document.removeteacher.username.value;
+	var pass=document.removeteacher.passwd.value;
+	if(username=="")
+	{
+		alert("First Details must be filled");
+		return false;
+	}
+	if(uname=="" || pass=="")
+	{
+		alert("First Details must be filled");
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+<body bgcolor="cyan">
+<form name="addteacher" action="addnewteacher.jsp" method="POST" onsubmit="return fun()" >
+<center>
+<img src="logo.png" width="780" height="151" alt="logo"><br><br>
+<font color=BLUE><MARQUEE WIDTH=100% BEHAVIOR=ALTERNATE BGColor=yellow><u><b>ADD NEW TEACHER</b></u></MARQUEE></font><br><br>
+<br><br>
+<table width="50%" border="0" align="center" cellpadding="5" cellspacing="5"> 
+<tr>
+<th align=left>Enter UserName :</th><td align=left><input type=text name=username size="20" ></td>
+</tr>
+<tr>
+	<th align=left>Password :</th>
+	<td align=left><input name="passwd" type=password size="20" ><br></td>
+</tr>
+<tr>
+<th align=left>Enter Branch :</th><td><input type="text" name="branch"></td>
+</tr>
+<tr>
+	<th colspan=0 align=right><input type="RESET" value=RESET></th>
+	<th colspan=0 align=left><input type="SUBMIT" value=SUBMIT></th>
+</tr>
+</table>
+</center>
+</form>

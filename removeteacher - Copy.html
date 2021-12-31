@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Remove A Teacher</title>
+<script language="javascript" >
+function fun()
+{
+	var name=document.removeteacher.tname.value;
+	var dname=document.removeteacher.dname.value;
+	if(username=="")
+	{
+		alert("First Details must be filled");
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+<body bgcolor="cyan">
+<form name="removeteacher" method="POST" action="removeteacher.jsp" onsubmit="return fun()" >
+<center>
+<img src="logo.png" width="780" height="151" alt="logo"><br><br>
+<font color=BLUE><MARQUEE WIDTH=100% BEHAVIOR=ALTERNATE BGColor=yellow><u><b>REMOVE A TEACHER</b></u></MARQUEE></font><br><br>
+<br><br>
+<table width="50%" border="0" align="center" cellpadding="5" cellspacing="5"> 
+<tr>
+<td align=left>Enter UserName :</td>
+<td><input type="text" name="username"></td>
+</tr>
+<tr>
+	<th colspan=0 align=right><input type="RESET" value=RESET></th>
+	<th colspan=0 align=left><input type="SUBMIT" value=SUBMIT></th>
+</tr>
+</table>
+</center>
+</form>
